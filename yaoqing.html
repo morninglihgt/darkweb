@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>购买资料</title>
+  <style>
+    /* 让html和body元素占满整个屏幕 */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* 设置body的背景图片铺满屏幕 */
+    body {
+      background-image: url('456.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* 半透明框样式 */
+  .form-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 5px;
+      width: 80%;
+      /* 这里将宽度设置为相对比例，更好适应不同屏幕宽度 */
+      max-width: 400px;
+      /* 设置一个最大宽度，避免在大屏幕上过于宽展 */
+    }
+
+    button {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      /* 添加半透明边框，这里颜色为半透明黑色 */
+      box-shadow: none;
+      background-color: transparent;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      /* 添加内边距，让文字与边框有一定间距，更美观 */
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+  .bottom-text {
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      /* 添加鼠标指针样式，提示可点击 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <button onclick="showMessage()">获取资料</button>
+    <input type="text" placeholder="请输入资料验证">
+    <p class="bottom-text" onclick="initiatePayment()">没有资料验证，点这里</p>
+  </div>
+  <script>
+    function showMessage() {
+      alert("资料请点击下方链接！");
+    }
+
+    function initiatePayment() {
+        window.location.href = "https://www.tuchuli.cn/p.php?8tp=t3.27172a1425b36500.pg3:https://www.tuchuli.cn/p.php?8tp=t3.27172a1425b36500.pg3";
+    }
+  </script>
+</body>
+
+</html>
