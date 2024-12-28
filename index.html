@@ -23,6 +23,16 @@
       background-repeat: no-repeat;
     }
 
+    /* 新增提示语句的样式 */
+   .prompt {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 16px;
+    }
+
     /* 按钮样式 */
     button {
       border: none;
@@ -39,6 +49,8 @@
 </head>
 
 <body>
+  <!-- 添加提示语句 -->
+  <div class="prompt">点击右上角...在浏览器打开</div>
   <button onclick="window.location.href = 'yaoqing.html';">进入准备</button>
 </body>
 
